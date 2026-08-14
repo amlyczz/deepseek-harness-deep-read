@@ -1,0 +1,1644 @@
+# repo map（119/2595 个文件，预算 8000 tokens）
+
+packages/client/ui-message-feedback/src/client/controller.ts (rank 0.0246)
+  MessageFeedbackRemote
+  MessageFeedbackStatus
+  MessageFeedbackView
+  MessageFeedbackActionResult
+  describe
+  fail
+  carrierFailure
+  MessageFeedbackController
+
+packages/core/session/src/types.ts (rank 0.0182)
+  SessionId
+  SessionId
+  SessionHeader
+  CreateSessionOptions
+  RestoredSessionOptions
+  PrepareSessionOptions
+  AgentCancelCause
+  TurnEndCancelCause
+  TurnEndReasonMap
+  TurnEndReason
+  TodoItem
+  EpochHeader
+  RequestContext
+  RequestHeaderReason
+  SessionEventMap
+  SessionEventType
+  SurfaceEventType
+  SurfaceEvent
+  SurfaceOp
+  SurfaceIntent
+  SessionEvent
+
+packages/runtime-diagnostics/invariants/src/index.ts (rank 0.0129)
+  Config
+  InvariantFailure
+  InvariantInstaller
+  PendingInvariantRegistration
+  InvariantError
+  compilePatterns
+  InvariantRegistry
+
+packages/llm/llm/src/message.ts (rank 0.0118)
+  AssistantProvenance
+  ModelMessageSource
+  ToolMessageSource
+  ContextForm
+  ContextSnapshotSection
+  ContextFormed
+  MessageSourceMap
+  boundContextSummary
+  MessageSource
+  Message
+  UserMessage
+  AssistantMessage
+  ToolResultMessage
+  NewMessage
+  NewUserMessage
+  NewAssistantMessage
+  freezeMessage
+  createMessage
+  createUserMessage
+  createAssistantMessage
+  ToolResultMessageInput
+  createToolResultMessage
+  isTokenDelta
+
+packages/core/scope/src/index.ts (rank 0.0108)
+  ScopeKey
+  Scoped
+  ScopeParentBinding
+  linkScopeParent
+  bindScopeParent
+  scopeParentOf
+  scopeChainOf
+  Scope
+  quiesceFiber
+  scope
+  CreateScopeOptions
+  createScope
+  scopeOf
+  scopeTarget
+  isScopeCarrier
+  carrierKeyOf
+
+packages/client/ui-conversation/src/client/contract/views.ts (rank 0.0100)
+  CallId
+  SelectionTarget
+  ViewTab
+  ChatStoreState
+
+scripts/gen-config-catalog.ts (rank 0.0086)
+  Kind
+  TypeRef
+  Paste
+  CatalogEntry
+  FileCtx
+  report
+  loadFile
+  TypeDecl
+  findTypeDecl
+  resolveTypeName
+  collectTypeNames
+  pasteText
+  checkMemberDocs
+  World
+  PathLookup
+  PathStep
+  parsePath
+  loadRelative
+  findExportedTypeDecl
+  declForTypeName
+  lookupPath
+  unwrapExpr
+  walkSchemaExpr
+  findSchemaExpr
+  findInject
+  defaultExport
+  applyExport
+  collectConfigCatalog
+  requiresLine
+  refLink
+  renderConfigEntry
+  renderTerse
+  render
+  main
+
+packages/util/brand/src/index.ts (rank 0.0082)
+  Branded
+
+packages/llm/llm/src/types.ts (rank 0.0079)
+  LlmFailure
+  TextBlock
+  ReasoningBlock
+  ImageBlock
+  ToolCallBlock
+  ToolResultBlock
+  ContentBlockMap
+  ContentBlockType
+  ContentBlock
+  FinishReasonMap
+  FinishReason
+  TokenUsage
+  LlmProviderInfo
+  ModelModalityMap
+  ModelModality
+  LlmConfigurableProvider
+  LlmModelDiscoveryRequest
+  LlmDiscoveredModel
+  LlmModelInfo
+  LlmModelContext
+  LlmReasoningEffortInfo
+  LlmModelReasoningInfo
+  LlmResolvedModelInfo
+  StreamChunk
+  ToolSchema
+  GenerateOptions
+
+packages/session-query/session-query-sqlite/src/index.ts (rank 0.0069)
+  OpenAt
+  Config
+  ResolvedConfig
+  ObservedSession
+  ObservedPersistedSession
+  PersistenceBinding
+  Observation
+  IndexedPersistedRow
+  IndexedLiveRow
+  SessionHeaderRow
+  SearchRow
+  CursorPayload
+  SqliteSessionQueryEngine
+  headerBindings
+  selectedDocumentsSql
+  selectedDocumentsParams
+  observeLive
+  observeSession
+  materializePersistenceSnapshots
+  samePersistenceSnapshots
+  sameSessionIds
+  sameHeader
+  rowHeader
+  page
+  encodeCursor
+  decodeCursor
+  invalidCursor
+  resolveConfig
+  assertPositiveInteger
+  assertPageLimit
+  invalidConfig
+  indexClosed
+  assertNotAborted
+  waitWithAbort
+  isAbort
+  asError
+  errorMessage
+  isRuntimeArray
+
+packages/core/tools/src/index.ts (rank 0.0067)
+  ToolOutputDefinition
+  ToolDefinition
+  ToolResult
+  ToolExecutionToken
+  ToolExecutionInput
+  ToolExecutionMode
+  CodeDispatchLog
+  ToolExecution
+  ToolDispatchExecution
+  ToolRunContext
+  MutableToolRunContext
+  ScheduledToolPreparation
+  ScheduledToolDispatch
+  ToolRuntimeScheduler
+  ToolErrorInfo
+  ToolFailure
+  ToolNotFoundError
+  ToolOutputError
+  projectionError
+  snapshotProjection
+  snapshotToolValue
+  ToolExecutionSuccess
+  ToolExecutionFailure
+  ToolExecutionResult
+  PreToolDecision
+  PostToolDecision
+  errorMessage
+  failureMessageFromContent
+  materializePresentation
+  errorInfo
+  ToolPresentationMode
+  Config
+  ToolRestriction
+  CompiledToolRestriction
+  ToolView
+  ToolGuard
+  ToolLayer
+  ToolAskResolution
+  ToolCancellationState
+  FusedToolSignal
+  resolveMaxParallelSubCalls
+  ToolRuntime
+  createExecutionToken
+  toolErrorResult
+  isAborted
+  fuseToolSignals
+  toolAbortedResult
+  toolAbortedBeforeDispatchResult
+
+packages/client/runtime/src/client/sessions/session.ts (rank 0.0058)
+  SessionOptions
+  Session
+  conversationInput
+  hasVisibleConversationContent
+  derivePhase
+
+packages/hooks/hooks-claude-code/src/index.ts (rank 0.0050)
+  Config
+  nextHandlerId
+  assertPositiveInteger
+  apply
+  lastTurn
+  blocksToText
+  base
+  sessionStartPayload
+  promptPayload
+  preToolPayload
+  postToolPayload
+  stopPayload
+  subagentPayload
+
+packages/core/tools/src/testing.ts (rank 0.0050)
+  ContentToolFixtureOptions
+  defineContentToolFixture
+
+packages/terminal/tool-terminal/src/index.ts (rank 0.0047)
+  Config
+  SpawnArgs
+  SessionArgs
+  SendArgs
+  ReadArgs
+  SignalArgs
+  requireAgent
+  sessionId
+  textResult
+  rawContentText
+  sendDetail
+  apply
+
+packages/core/system-prompt/src/index.ts (rank 0.0043)
+  AssembleContext
+  PromptSection
+  PromptContext
+  AssembledSection
+  AssembledContext
+  ToolProviderResult
+  PromptAssembly
+  validateToolOrder
+  orderTools
+  compareToolNames
+  Config
+  renderPrompt
+  renderContextSnapshot
+  joinContextSections
+  renderContextSections
+  interpolate
+  ToolProvider
+  VariableProvider
+  PromptLayer
+  SystemPrompt
+
+packages/llm/llm/src/brand.ts (rank 0.0043)
+  MessageId
+  MessageId
+  CallId
+  CallId
+  ProviderRequestId
+  ProviderRequestId
+  ReasoningEffortId
+  ReasoningEffortId
+
+packages/client/runtime/src/client/contract/conversation.ts (rank 0.0041)
+  ConversationEventInput
+  ConversationMatchResult
+  ConversationTurnDataMap
+  ConversationStepDataMap
+  ConversationLocationDataStore
+  ConversationLocationDataValue
+  RegisteredTurnData
+  RegisteredStepData
+  ConversationLocationData
+  StepLocation
+  TurnLocation
+  ConversationLocation
+  ConversationMatch
+  ConversationViewNode
+  ConversationViewSnapshotMap
+  ConversationViewSnapshotStore
+  ChatConversationViewNode
+  ConversationNodeContext
+  ConversationPreviousContext
+  ConversationContextReader
+  ConversationPublication
+  ConversationLocationDataScope
+  ConversationNodeDefinition
+  ConversationTimelineSnapshot
+  ConversationViewBuilder
+  ConversationViewDefinition
+  conversationContextKey
+
+packages/sandbox/sandbox-policy/src/session-mode.ts (rank 0.0040)
+  effectiveSandboxMode
+  setSandboxMode
+
+packages/core/tools/tests/scoped.spec.ts (rank 0.0040)
+  mount
+  mintAgentScope
+  tool
+  run
+  ToolResultListener
+  AsyncToolResultListener
+  mintChild
+  value
+
+packages/host/apiproxy/src/api/rpc.ts (rank 0.0037)
+  ZodIssue
+  RpcId
+  RpcId
+  RpcErrorDetailsMap
+  RpcErrorCode
+  RpcError
+  RpcResult
+  transportError
+  RpcRequest
+  RpcResponse
+  ClientRequest
+  ServerResponse
+  ServerRequest
+  ClientResponse
+  RpcMessage
+  RpcReceipt
+
+packages/client/runtime/src/client/sessions/conversation-assembler.ts (rank 0.0036)
+  Dependency
+  InternalContext
+  PendingMatch
+  ViewState
+  emptyLocationData
+  maximumPublication
+  startSeq
+  insertionIndex
+  contextSnapshot
+  mergeMatches
+  ConversationEventDefinitions
+  ConversationViewDefinitions
+  ConversationNodeAssembler
+  isLocationBoundary
+  requireState
+  ConversationRuntime
+
+packages/client/ui-attachment/src/AttachmentRail.tsx (rank 0.0034)
+  AttachmentRailItem
+  AttachmentRailLabels
+  pageBehavior
+  AttachmentRail
+
+packages/typert/protocol/src/types.ts (rank 0.0033)
+  TypertLookup
+  TypertLookupHost
+  TypertLookupWire
+  TypertContext
+  TypertContextWire
+  TypertLookupMap
+  TypertContextMap
+  TypertRemoteMap
+  RemoteFailure
+  RemoteResult
+  TypertRemoteScopeMap
+  TypertForwardableEvent
+  TypertRemoteEventSelection
+  TypertRemoteEvent
+  TypertRemoteNamespace
+  TypertRemoteScopeNamespace
+  TypertRemoteScopeNamespaceKey
+  TypertRemoteScopeApi
+  TypertRemoteNamespaceMap
+  TypertDisposer
+  StringKeyOf
+  TypertSchema
+  TypertCodec
+  InvocationParameterDescriptor
+  InvocationSourceLocation
+  InvocationDescriptor
+  TypertRemoteContribution
+  TypertClientRemote
+  TypertLookupResolver
+  TypertLookupProvider
+  TypertLookupDefinition
+  TypertHostContextProvider
+  TypertHostContextResolver
+  TypertClientContextBinder
+  TypertRegistryChange
+  TypertRegistryListener
+  TypertLocalRegistry
+  TypertRemoteRegistry
+  TypertLookupRegistry
+  TypertContextRegistry
+  TypertRegistryContract
+
+packages/client/runtime/src/client/contract/store.ts (rank 0.0033)
+  ObservableSnapshot
+  SnapshotStore
+  shallowEqual
+  rafBatch
+  createSnapshotStore
+  attachPersistence
+  devFreeze
+  deepFreeze
+  EngineStoreInstance
+  EngineStoreHandle
+  defineStore
+
+packages/core/session/src/json.ts (rank 0.0032)
+  JsonValue
+  hasIntrinsicConstructor
+  isIntrinsicObjectPrototype
+  hasPlainArrayPrototype
+  hasPlainObjectPrototype
+  enumerableStringKeys
+  SnapshotDestination
+  JsonWalkTask
+  walkJsonValue
+  snapshotJsonValue
+  isJsonValue
+
+packages/goal/tool-goal/src/authority.ts (rank 0.0031)
+  TurnStartEvent
+  GoalToolExecution
+  GoalToolAuthority
+  reject
+  openTurn
+  goalToolExecution
+  hasDirectHumanInput
+  isMatchingGoalRound
+  requireDirectHuman
+  completionAuthority
+
+packages/llm/llm/src/call-config.ts (rank 0.0031)
+  LlmCallConfig
+  LlmCallConfigAdapterDefaults
+  callConfigEquals
+  markAgentLoopRequest
+  isAgentLoopRequest
+  deepFreeze
+
+packages/sandbox/sandbox/src/index.ts (rank 0.0031)
+  SandboxMode
+  ConfinedSandboxMode
+  SandboxExecutionPolicy
+  SandboxEnforcement
+  SandboxPolicy
+  RunnerFailureRule
+  ConfinedArgv
+  SandboxUnavailableError
+  SandboxProvider
+
+packages/client/tsdown.client.ts (rank 0.0030)
+  browserSourcePath
+  clientBundle
+  clientLibrary
+  clientOnly
+  ClientBundleOptions
+  BuildFace
+  BuildFaceConfig
+  buildFace
+  clientLibraryConfig
+  clientConfig
+  sourceAssetPath
+
+packages/client/ui-deliverables/src/client/turn-deliverables.ts (rank 0.0029)
+  ProducedPath
+  DeliverablesTurnData
+  DeliverablesState
+  producedPaths
+  producedForClosing
+  selectProducedFiles
+  basename
+  producedFileMentions
+  onlyPathWithBasename
+
+packages/sandbox/sandbox-policy/tests/policy.spec.ts (rank 0.0028)
+  mounted
+  session
+  agentFor
+  policyContext
+  promptMounted
+
+packages/client/runtime/src/client/agents/scope.ts (rank 0.0027)
+  AgentContext
+  AgentScopeHandle
+  agentScope
+  createScope
+  scopeOf
+
+packages/client/ui-deliverables/tests/produced-files.client.spec.tsx (rank 0.0026)
+  TestTurnDataStore
+  tailOwner
+  TimelineSnapshot
+  TestEventDefinitions
+  TestViewDefinitions
+  at
+  matched
+  call
+  result
+  diff
+  edit
+  assembler
+  deliverablesOf
+  constructor
+  observe
+  disconnect
+  get
+
+packages/core/scope/src/store.ts (rank 0.0026)
+  ScopeLayer
+  EntryValues
+  NamedEntries
+  AnonymousEntries
+  ScopedLayers
+
+packages/client/ui-permission-presets/src/client/settings-store.ts (rank 0.0025)
+  PermissionDefaultOption
+  PermissionSettingsState
+  ConstChoice
+  permissionDefaultOf
+  PermissionPresetSettingsController
+  refreshPermissionIfLoaded
+
+packages/attachment/attachment-local/src/store.ts (rank 0.0025)
+  digest
+  displayName
+  objectPath
+  ensureReference
+  inspectMetadata
+  validateImageFile
+  syncDirectory
+  ensureDurableDirectory
+  ensureDurableHome
+  saveImageFile
+  readImageFile
+
+packages/llm/llm/src/error.ts (rank 0.0025)
+  HarnessError
+  isContextWindowExceededError
+  isQuotaExceededError
+  errorChain
+  isHarnessError
+
+packages/client/connection/src/client/fixture.ts (rank 0.0024)
+  rpcRequest
+  text
+  userMessage
+  assistantMessage
+  toolResultMessage
+  sgr
+  fixtureModelGroups
+  sid
+  fixtureUsage
+  buildAlphaLog
+  presentCall
+  presentResult
+  viewFor
+  foldPlan
+  planViewOf
+  permissionSelectOf
+  FixtureTokenUsageProjection
+  FixtureUsageSample
+  usageSampleOf
+  tokenUsageOf
+  sessionStatsOf
+  FixtureRequestContext
+  FixtureContextBreakdownProjection
+  estimateFixtureContent
+  contextBreakdownOf
+  lastRequestContext
+  contextPressureOf
+  projectionValuesOf
+  projectionFramesOf
+  pageOf
+  logReferencesAttachment
+  searchBlockText
+  searchEventText
+  FixtureSearchToken
+  searchTokenSpans
+  FixturePhraseMatch
+  phraseMatch
+  searchSnippet
+  FixtureSearchCandidate
+  compareSearchCandidates
+  backscanTodos
+  FxGoalProjection
+  FxGoalChange
+  backscanGoal
+  StreamConn
+  ReasoningChunkStormState
+  FixtureOptions
+  FxInbox
+  createFixtureApi
+  FixtureWorld
+  createFixtureFaces
+  createFixtureWorld
+  FixtureApiClient
+  fixtureOptionsFromLocation
+
+packages/hooks/hook-protocol/src/merge.ts (rank 0.0024)
+  MergedDecision
+  MergedHookOutcome
+  rank
+  decisionForRank
+  mergeHookOutputs
+
+packages/core/tools/src/schema.ts (rank 0.0024)
+  ValueSchemaAnnotations
+  StringValueSchemaSpec
+  NumberValueSchemaSpec
+  IntegerValueSchemaSpec
+  BooleanValueSchemaSpec
+  NullValueSchemaSpec
+  ArrayValueSchemaSpec
+  ObjectValueSchemaSpec
+  JsonValueSchemaSpec
+  OneOfValueSchemaSpec
+  ValueSchemaSpec
+  ParameterPropertySpec
+  ParameterSchemaSpec
+  ParameterJsonSchema
+  Simplify
+  StringKeyOf
+  RequiredKeys
+  InferProperty
+  InferProperties
+  InferObject
+  InferScalar
+  NextInferenceDepth
+  InferValueAt
+  InferValue
+  InferArgs
+  authorError
+  copyAnnotations
+  assertAuthorKeys
+  CompiledPropertyMap
+  CompileRoot
+  NodeDestination
+  PropertyMapDestination
+  CompileTask
+  assignCompiledNode
+  assignCompiledPropertyMap
+  runSchemaCompiler
+  compilePropertyMap
+  compileValueSchema
+  valueSchemaSpecToJsonSchema
+  parameterSchemaSpecToJsonSchema
+  ToolArgsError
+  validateArgs
+  DefineToolOptions
+  defineTool
+
+packages/interaction/user-questions/src/index.ts (rank 0.0023)
+  AskUserQuestionRequest
+  UserQuestionProvider
+  UserQuestionError
+  UserQuestionService
+
+packages/core/agent/src/runtime-types.ts (rank 0.0022)
+  AgentOptions
+  CancelOptions
+  AgentStatus
+  PreStepDecision
+  RequestErrorAction
+  SessionStartSource
+  Agent
+
+packages/client/ui-deliverables/src/client/ProducedFiles.tsx (rank 0.0022)
+  fitProducedFiles
+  ProducedFilesInjected
+  ProducedFilesProps
+  moreLabel
+  ProducedFiles
+
+packages/client/ui-slots/src/index.ts (rank 0.0021)
+  SlotMap
+  LocaleNamespaceMap
+  Translate
+  CommonKeyOf
+  LocaleKeysOf
+  TranslateNS
+  LocaleDictOf
+  PropsLocale
+  SlotKind
+  SlotScope
+  SlotEntryDef
+  SlotSpec
+  ChildrenDecl
+  OwnerOf
+  EntryKeyOf
+  KeyPropsOf
+  HookContextOf
+  SlotInjectOf
+  ScopeOf
+  SessionStandardProps
+  SessionMaybeStandardProps
+  GlobalStandardProps
+  SessionIdOf
+  PropsRuntime
+  RenderOpts
+  ChainRenderOpts
+  ChainSelect
+  ChainKeysOf
+  ContextualKeysOf
+  OrdinaryKeysOf
+  RenderSlotFn
+  MatchedShare
+  UseSession
+  SessionAreaProps
+  SessionProviderComponent
+  PropsRenderSlots
+  SlotComponent
+  HooksSources
+  StandardPropsOf
+  SlotHookFactory
+  BoundHookOf
+  PropsSlotHooks
+  SlotInjectFace
+  PropsHooks
+  InjectFace
+  ComposedProps
+  InjectParams
+  SlotLabel
+  KindOptions
+  RendersCheck
+  BaseOptions
+  StoredEntry
+  resolveSlotLabel
+  ErasedOptions
+  SlotRecord
+  LiveSlotOccupant
+  LiveSlotNode
+  SlotCore
+
+packages/llm/llm/src/index.ts (rank 0.0021)
+  LlmErrorOptions
+  LlmError
+  assertUsableApiKey
+  PreparedLlmCall
+  LlmAdapter
+  AdapterRegistrationHandle
+  DirectoryRegistrationHandle
+  LlmRuntime
+  adapterFailureChunk
+  AdapterRegistration
+
+packages/client/runtime/src/client/sessions/conversation.ts (rank 0.0020)
+  AssistantRequestConfig
+  AssistantProvenanceView
+  AssistantBlock
+  toAssistantBlocks
+  toAssistantBlock
+  UserMessageNode
+  AssistantTiming
+  AssistantMessageNode
+  SteeringMessageNode
+  ContextMessageNode
+  ModelRetryNode
+  TurnErrorNode
+  TurnMaxTokensNode
+  ToolResultNode
+  CompactionSummaryNode
+  UnknownSurfaceNode
+  CommandNode
+  ConversationNode
+  RunningToolCall
+  ToolCallBlock
+  QueuedMessage
+  PartialAssistant
+  OpenState
+  ComposerPhase
+  PromptError
+  ChatNodeStore
+  ChatLocationNodeIndex
+  LegacyConversationSlice
+  ChatSnapshot
+  ConversationSnapshot
+
+packages/client/runtime/tests/conversation-assembler.client.spec.ts (rank 0.0019)
+  ScopeProbeStepData
+  ScopeProbeTurnData
+  TestSnapshot
+  TestEventDefinitions
+  TestViewDefinitions
+  testView
+  at
+  input
+  chatSnapshot
+  node
+  fallbackDefinition
+  State
+
+packages/client/ui-permission-presets/tests/permission-presets-row.client.spec.tsx (rank 0.0019)
+  view
+  ok
+  mount
+
+packages/extensions/cordis-client-runner/src/client/providers.ts (rank 0.0019)
+  clientInspectProviders
+  registration
+  exactInput
+  readExact
+  LiveSlotNode
+  compactSlotTree
+  inspectLiveSlot
+  inspectSlotCatalog
+
+packages/api/gateway/src/client/index.ts (rank 0.0019)
+  MountToken
+  ScopedProjection
+  DirectMethod
+  ScopedMethod
+  RemoteMethodRecord
+  BoundContextIdentity
+  RemoteNamespaceHandle
+  ClientRemote
+  apply
+  RemoteEventListener
+  RemoteEventSubscription
+  ClientRemoteService
+  InvokeRemote
+  RemoteNamespaceService
+  remoteServiceKey
+  endpointOf
+  mountActive
+  scopedProjection
+  requireStrictDescriptor
+  requireStrictCodec
+  parse
+  withdrawn
+  carrierFailure
+  internalFailure
+
+packages/client/ui-trajectory/src/client/trajectory-snapshot-builder.ts (rank 0.0018)
+  AssistantRequest
+  ToolSchema
+  stepKey
+  headerStepKey
+  headerFor
+  applyHeader
+  withRequestConfig
+  captureSchemas
+  indexTools
+  interruptCompactions
+  applyTurnErrors
+  TrajectorySnapshotBuilder
+  registerTrajectoryConversationView
+
+packages/lsp/lsp/src/index.ts (rank 0.0018)
+  LspError
+  finalExtension
+  Route
+  Lsp
+  normalizeExtension
+
+native/landlock-run/scripts/verify-packed-install.mjs (rank 0.0018)
+  tarballName
+  tarballPath
+  run
+  runCapture
+  readPackedManifest
+  verifyPackedManifest
+  sha256
+  packageInstallDir
+  unpackTarball
+
+packages/client/ui-attachment/tests/attachment-rail.client.spec.tsx (rank 0.0018)
+  observed
+  constructor
+  observe
+  disconnect
+  item
+  stubGeometry
+
+packages/subprocess/subprocess-local/src/index.ts (rank 0.0017)
+  LocalSubprocessRuntime
+  environmentValue
+
+packages/llm/llm-pi-ai/src/discovery.ts (rank 0.0017)
+  ListingEntry
+  capacity
+  label
+  listingUrl
+  readBounded
+  readListing
+  usableProbeKey
+  discoverModels
+
+packages/client/ui-slots/src/store.ts (rank 0.0017)
+  SnapshotSelectorHook
+  MaybeSnapshotSelectorHook
+  ActionsDecl
+  BakedActions
+  StoreSpec
+  StoreInstance
+  StoreHandle
+  StoreFactory
+  StoreDecl
+  HandleOf
+  BoundActions
+  PropsStore
+  DefineStore
+
+packages/sandbox/sandbox-policy/src/index.ts (rank 0.0016)
+  resolveWorkspaceRoot
+  renderPolicyContext
+  Config
+  SandboxPolicyRequest
+  SandboxPolicyService
+
+packages/typert/protocol/src/index.ts (rank 0.0016)
+  isTypertRemoteSegment
+  TypertLookupFailure
+  TypertGatewayBindingOptions
+  TypertGatewayBinding
+  RemoteInvocationMarker
+  RemoteMethodMarker
+  RemoteMethodDecorator
+  RemoteInitializerContext
+  StoredRemoteMethodMarker
+  bindTypertRemote
+  TypertRemoteService
+  Remote
+  RemoteScope
+  remoteMethods
+  addMarkerInitializer
+  mark
+  sameInvocation
+  validateName
+
+packages/core/session/src/request-header.ts (rank 0.0016)
+  canonicalHeader
+  sameSchema
+  headerEquals
+  foldRequestHeader
+
+packages/fs/fs/src/types.ts (rank 0.0016)
+  FsTargetKey
+  FsTargetKey
+  FsVersion
+  FsVersion
+  FsObservation
+  FsTarget
+  FsInfo
+  FsPathInfo
+  FsDirEntry
+  FsWriteIntent
+  FsWriteOutcome
+  FsEditRequest
+  FsEditOutcome
+  FsErrorCode
+  FsError
+
+packages/sandbox/sandbox/src/escalation.ts (rank 0.0016)
+  validateEscalationArgs
+  sandboxDenialMarker
+  escalationHintMarker
+  EscalationOutcome
+  EscalationApprover
+  EscalationApproval
+  EscalationRequest
+  approveEscalation
+
+packages/core/agent/tests/consumed-work.spec.ts (rank 0.0015)
+  message
+  accept
+  claim
+  cancelPending
+  steppedTurn
+
+packages/feedback/message-feedback/src/types.ts (rank 0.0015)
+  MessageFeedbackVersion
+  MessageFeedbackRating
+  MessageFeedbackItem
+  MessageFeedbackListRequest
+  MessageFeedbackListValue
+  MessageFeedbackPutRequest
+  MessageFeedbackDeleteRequest
+  MessageFeedbackDeleteValue
+  MessageFeedbackSessionNotFound
+  MessageFeedbackTargetNotFound
+  MessageFeedbackVersionConflict
+  MessageFeedbackNoteBlank
+  MessageFeedbackNoteTooLarge
+  MessageFeedbackFailure
+  MessageFeedbackSuccess
+  MessageFeedbackRejected
+  MessageFeedbackListResult
+  MessageFeedbackPutResult
+  MessageFeedbackDeleteResult
+
+packages/fs/fs-local/src/index.ts (rank 0.0015)
+  Config
+  ResolvedConfig
+  LocalFileSystem
+
+packages/core/tools/tests/execution-mode.spec.ts (rank 0.0015)
+  setup
+  exec
+  execute
+  execute
+  execute
+  execute
+  isConcurrencySafe
+  execute
+  execute
+
+apps/web/tests/smoke-real.e2e.ts (rank 0.0015)
+  waitForReadyLine
+  rpc
+  HistoryPage
+  isRecord
+  providerTitle
+  hasAssistantMarker
+  history
+  waitForProviderTitle
+  waitForAssistantMarker
+  screen
+  firstTrack
+  detailsTrack
+  NativeProviderRequest
+  CodeModeProviderRequest
+
+packages/core/agent/src/consumed-work.ts (rank 0.0015)
+  ConsumedWork
+  accountsForClaim
+  foldConsumedWork
+
+packages/fs/tool-fs/src/read-render.ts (rank 0.0014)
+  ReadWindow
+  FileTextLine
+  WindowResult
+  FileReadOutcome
+  WindowAccumulator
+  newAccumulator
+  truncateLine
+  lineByteSize
+  consumeLine
+  stripCarriageReturn
+  finish
+  buildWindow
+  formatReadOutput
+  langFromPath
+  FsReadMeta
+  isFileTextLine
+  readMetaFromMeta
+
+native/landlock-run/packages/entry/src/index.ts (rank 0.0014)
+  LandlockEnforcement
+  LauncherGrants
+  launcherPath
+  grantArgs
+  probe
+
+packages/client/web-react/src/bind.ts (rank 0.0013)
+  bindSnapshotSelector
+
+packages/core/session/src/index.ts (rank 0.0013)
+  validateSessionHeader
+  validateRestoredSessionHeader
+  snapshotSessionHeader
+  adoptSessionEvent
+  snapshotSessionEvent
+  freezeRestoredObject
+  assertSessionEventEnvelope
+  assertCurrentLlmShape
+  assertAdapterDefaults
+  assertMessageEventShape
+  hasProviderModel
+  assertSupportedRequestHeader
+  SessionCallback
+  collectSessionCallbacks
+  invokeContainedSessionObservers
+  SessionEntry
+  Session
+  SessionForkSource
+  SessionForkErrorCode
+  SessionForkError
+  SessionStore
+
+packages/client/ui-permission-presets/src/client/PermissionRow.tsx (rank 0.0013)
+  PermissionRowInjected
+  PermissionRowProps
+  PermissionRow
+
+packages/goal/tool-goal/src/index.ts (rank 0.0013)
+  Config
+  ResolvedConfig
+  UpdateAction
+  GoalToolValue
+  guidance
+  resolveConfig
+  hasText
+  hasRoundCap
+  goalRef
+  goalValue
+  present
+  apply
+
+packages/interaction/permission-presets/tests/permission-presets.spec.ts (rank 0.0012)
+  MemorySettings
+  mounted
+  freshSession
+  mountedStore
+  resolve
+  run
+  start
+
+packages/context/session-reference/src/index.ts (rank 0.0012)
+  PreparedSource
+  RenderedSource
+  SessionReferenceResolver
+  normalizeReferences
+  renderPrompt
+  candidateRank
+  assertNotCancelled
+  settleWithCancellation
+  cancelled
+
+packages/sandbox/sandbox-windows-acl/src/ffi.ts (rank 0.0012)
+  NativePtr
+  isNullPtr
+  isInvalidHandle
+  Ptr
+  StartupInfoInput
+  ProcessInfoOutput
+  Win32Bindings
+  allocPtrSlot
+  allocUint32
+  encodeUint32
+  decodePtr
+  decodeUint32
+  ptrAddress
+  allocBytes
+  allocOverlapped
+  decodePtrAt
+  decodeUint8At
+  decodeUint16At
+  decodeUint32At
+  sameSidAt
+  allocStartupInfo
+  encodeStartupInfo
+  allocProcessInfo
+  decodeProcessInfo
+  bindings
+  win32
+  win32Sync
+  errorText
+  getTempPath
+  throwLastError
+  throwWin32
+
+packages/client/ui-settings-general/src/client/settings-document-store.ts (rank 0.0011)
+  SettingsDocumentState
+  messageOf
+  SettingsDocumentStore
+  refreshDocumentIfLoaded
+
+packages/client/ui-slots/src/renderer.ts (rank 0.0011)
+  LocaleFace
+  HostObservable
+  StoreInstanceLike
+  SessionMaybeProvideInfo
+  SessionProvideInfo
+  RenderOpts
+  SlotRendererHost
+  SlotRenderer
+  StaleAuthorizationError
+  SlotOwnershipError
+
+packages/client/ui-conversation/tests/conversation-node-definitions.client.spec.ts (rank 0.0011)
+  TestEventDefinitions
+  TestViewDefinitions
+  at
+  assembler
+  snapshot
+  node
+  textMessage
+  assistantMessage
+  toolResult
+
+packages/test-support/client-runtime/src/translate.ts (rank 0.0011)
+  makeTranslate
+
+packages/client/ui-trajectory/src/client/trajectory-virtual-rows.ts (rank 0.0011)
+  VirtualizableTrajectoryRecord
+  TrajectoryVirtualRowEntry
+  TrajectoryVirtualRow
+  trajectoryVirtualRecordKey
+  groupTrajectoryVirtualRows
+
+packages/interaction/permission-presets/src/index.ts (rank 0.0011)
+  PresetSpec
+  effectivePermissionPreset
+  KnobState
+  applyKnobEvent
+  foldKnobs
+  PermissionSettings
+  Config
+  PermissionPresetService
+
+packages/settings/settings/src/index.ts (rank 0.0011)
+  settingsNamespace
+  SettingsApplies
+  SettingsRegisterOptions
+  SettingsDescriptor
+  SettingsDescribeOptions
+  SettingsScope
+  deepEqualJson
+  SettingsConflictError
+  isPlainObject
+  SettingsPathOp
+  applyPathOp
+  describeRejected
+  cloneJsonShaped
+  mergeLayers
+  deepFreeze
+  SettingsWatcher
+  SettingsRegistration
+  SettingsProvider
+  isUnloading
+  SettingsSectionHooks
+  installSettingsSection
+
+packages/client/ui-goal/tests/goal-command-input.client.spec.tsx (rank 0.0011)
+  TestEventDefinitions
+  TestViewDefinitions
+  entry
+  snapshot
+  node
+
+packages/attachment/attachment/src/brand.ts (rank 0.0010)
+  AttachmentId
+  AttachmentId
+
+packages/client/ui-model-selection/src/client/ModelSelect.tsx (rank 0.0010)
+  Pane
+  EffortChoice
+  ModelSelect
+
+packages/host/directory-picker-native/src/native-picker.ts (rank 0.0010)
+  DirectoryPickerRunner
+  DirectoryPickerInternals
+  outputPath
+  errorCode
+  errorStderr
+  isMissingCommand
+  rethrowIfAborted
+  pickNativeDirectory
+
+packages/attachment/attachment/src/types.ts (rank 0.0010)
+  ImageMediaType
+  ImageAttachmentRef
+  ImageAttachmentLimits
+  SaveImageAttachment
+  StoredImageAttachment
+
+packages/core/session/tests/request-header.spec.ts (rank 0.0010)
+  tool
+  seedWith
+
+packages/client/ui-settings-plugin-inventory/src/client/PluginInventorySettingsTab.tsx (rank 0.0010)
+  PluginInventorySettingsTabInjected
+  PluginInventoryEntry
+  PluginFiberPhase
+  PluginInventorySettingsTabProps
+  ViewState
+  phaseLabel
+  moduleShortName
+  matches
+  PluginInventorySettingsTab
+
+packages/core/agent/src/index.ts (rank 0.0010)
+  AgentSetupCommit
+  AgentSetup
+  CreateAgentOptions
+  ResumeAgentOptions
+  AgentHandle
+  AgentFactory
+  AgentEntry
+  InitiatorRun
+  FactorySlot
+  AgentRegistry
+
+packages/host/apiproxy/src/api/events.ts (rank 0.0010)
+  ToolEventView
+  QueuedInboxItem
+  EventsApi
+  MuxFrame
+  HostFrame
+
+packages/lsp/lsp/src/types.ts (rank 0.0009)
+  LspOperation
+  LspPosition
+  LspRange
+  LspQueryRequest
+  LspProviderQuery
+  LspLocation
+  LspHover
+  LspQueryResult
+  LspProvider
+  LspService
+
+packages/client/ui-attachment/tsdown.config.ts (rank 0.0009)
+  resolveId
+  load
+
+packages/web/tool-web/src/fetch.ts (rank 0.0009)
+  renderTableCell
+  isTableHeadingRow
+  tableBorder
+  replacement
+  replacement
+  parseFetchArgs
+  isTagBoundary
+  findRawTextEnd
+  exceedsConversionDepth
+  RenderedBody
+  renderBody
+  RenderedFetch
+  renderFetchOutput
+  computeFetchOutput
+  formatFetchOutput
+  presentFetchCall
+  WebFetchMeta
+  fetchMetaFromValue
+  fetchMetaFromResult
+  presentFetchResult
+  applyWebFetchTool
+
+packages/attachment/attachment-local/tests/store.spec.ts (rank 0.0009)
+  root
+  parentChainToRoot
+
+packages/shell/shell-env/src/index.ts (rank 0.0009)
+  Config
+  BashEnvVariable
+  BashEnvContributor
+  BashEnvVariableInfo
+  ShellEnvRegistry
+  apply
+
+packages/client/ui-primitives/src/TerminalBlock.tsx (rank 0.0009)
+  TerminalBlockLabels
+  TerminalBlockProps
+  promptLabel
+  statusText
+  runState
+  renderLine
+  TerminalBlock
+
+packages/client/runtime/tests/subagent-lineage.client.spec.ts (rank 0.0008)
+  summary
+  index
+
+examples/acp-agent/tests/snapshots/lsp-definition/workspace/lsp-server.mjs (rank 0.0008)
+  frame
+  location
+  handle
+
+packages/interaction/user-questions/src/types.ts (rank 0.0008)
+  AskUserQuestionOption
+  AskUserQuestionIntent
+  AskUserQuestionItem
+  AskUserQuestionAnswerItem
+  AskUserQuestionAnswer
+
+packages/client/ui-model-selection/tests/model-select.client.spec.tsx (rank 0.0008)
+  state
+
+packages/subagent/subagent-codex/src/wire.ts (rank 0.0008)
+  JsonObject
+  object
+  string
+  unattendedDecision
+  isContextWindowExceeded
+  thrown
+  abortError
+  raceAbort
+  CodexAppServerWire
+
+scripts/release/bump.ts (rank 0.0008)
+  PlannedVersion
+  releaseNumbers
+  compareReleaseNumbers
+  prereleaseOf
+  compareVersions
+  nextSharedVersion
+  nextVendorVersion
+  reachesPayload
+  lastTaggedVersion
+  writeVersion
+  rootVersion
+  planShared
+  planPerPackage
+  main
+
+packages/core/tools/src/presentation.ts (rank 0.0008)
+  ToolCallKind
+  FileLocation
+  FileDiff
+  ToolCallView
+  GenericCallView
+  TerminalCallView
+  DiffCallView
+  ReadFileLine
+  ToolResultView
+  GenericResultView
+  TerminalResultView
+  DiffResultView
+  SearchLineMatch
+  SearchFileMatches
+  SearchMatchesResultView
+  SearchPathsResultView
+  SearchResultView
+  ReadResultView
+  WebSource
+  WebResultView
+  WebSearchResultView
+  WebFetchResultView
+
+packages/compaction/compaction/src/tool-pairing.ts (rank 0.0008)
+  BalanceCache
+  eventDelta
+  eventForSeq
+  extendCache
+  balanceCache
+  cutBalance
+  toolPairingBalancedBefore
+  toolPairingBalancedAfter
+
+packages/client/runtime/src/client/slots.ts (rank 0.0008)
+  RootOwnerProps
+  EngineStoreHandle
+  EngineStoreInstance
+  StoreAxisRecord
+  ErasedRegisterOptions
+  ErasedCore
+  SlotInjectionEffect
+  SlotRegistry
+
+packages/session-query/session-query/src/config.ts (rank 0.0008)
+  Config
+  SessionQueryErrorCode
+  SessionQueryError
+
+packages/fs/fs-local/src/fsio.ts (rank 0.0008)
+  isENOENT
+  isEEXIST
+  isENOTDIR
+  isAbortError
+  errorMessage
+  isPermissionError
+  throwIfAborted
+  readFileAbortable
+  versionOf
+  FsIoInternals
+  LocalTarget
+  PathInfo
+  PathLinkInfo
+  LocalDirEntry
+  resolveLocalTarget
+  pathType
+  pathLinkType
+  probeStats
+  probe
+  probeNoFollow
+  listingIoError
+  resolveListedChildTarget
+  listDirectory
+  notTextError
+  decodeUtf8
+  decodeUtf8Stream
+  statRegularFile
+  readWholeText
+  readWholeBytes
+  streamWholeText
+  removeStagingDirOrThrow
+  throwGuardedCreateFailure
+  writeFileAtomic
+  LineEndings
+  normalizeLineEndings
+  detectLineEndings
+  restoreLineEndings
+  countOccurrences
+  readForEdit
+  readTextForDiff
+  applyLiteralEdit
+
+packages/subprocess/subprocess/src/types.ts (rank 0.0008)
+  DshEnvironmentKey
+  DshEnvironment
+  CollectedOutput
+  SubprocessStdinMode
+  SubprocessCollect
+  SubprocessOutputMode
+  SubprocessStdio
+  SubprocessSpawnSpec
+  SubprocessOutcome
+  SubprocessOutputRead
+  SubprocessOutputReader
+  SubprocessCollectedOutputs
+  SubprocessHandle
+  SubprocessTerminalSignal
+  SubprocessTerminalSpawnSpec
+  SubprocessTerminalForeground
+  SubprocessTerminalHandle
+
+packages/subagent/subagent/src/types.ts (rank 0.0008)
+  SubagentRunId
+  SubagentRunId
+  SubagentRunInfo
+  SubagentRunEndInfo
+  SubagentCapabilities
+  SubagentStartRequest
+  ResolvedSubagentStartRequest
+  ContinuableCreateRequest
+  ContinuableCreateSpec
+  SubagentStopReasonMap
+  SubagentStopReason
+  SubagentResult
+  SubagentRun
+  SubagentProvider
+
+packages/sandbox/sandbox/src/roots.ts (rank 0.0007)
+  canonicalPath
+  writableRoots
+
+packages/lsp/lsp-stdio/tests/provider.spec.ts (rank 0.0007)
+  query
+  config
+
+packages/client/ui-conversation/src/client/contract/slots.ts (rank 0.0007)
+  ComposerAttachment
+  HeroAgentPresetOwnerProps
+  ConversationSessionOwnerProps
+  ConversationHeaderActionOwnerProps
+  InputZone
+  ConvViewOwnerProps
+  ChatFileMentions
+  TurnTailOwnerProps
+  AssistantActionOwnerProps
+  UseChatNodeTurnData
+  ChatNodeTurnDataInjected
+  ChatNodeOwnerProps
+  ChatNodeViewProps
+  DetailsToolOwnerProps
+  CommandRowOwnerProps
+  CommandRowProps
+  ConvViewProps
+  ChatStore
+  ConversationInjected
+  ConversationSessionInjected
+  ConversationSessionHeaderInjected
+  ComposerBarOwnerProps
+  ComposerBarInjected
+  InputControlOwnerProps
+  ComposerBarProps
+  ComposerChainProps
+  ConversationSlotProps
+  ConversationSessionSlotProps
+  ConversationSessionHeaderSlotProps
+  ApprovalWait
+  PendingApproval
+  ApprovalComposerProps
+  ChatScrollPosition
+  ChatViewInjected
+  ChatViewSlotProps
+  DetailsInjected
+  DetailsSlotProps
+  EmptyWorkspaceOwnerProps
+
+packages/core/agent-default-model/src/index.ts (rank 0.0007)
+  AgentDefaultModelSettings
+  Config
+  selection
+  AgentDefaultModelConfig
+
+packages/llm/llm/tests/invariant.spec.ts (rank 0.0007)
+  setup
+  source
+  consume
+  NoopAdapter
+  BrokenLlm
+
+scripts/release/families.spec.ts (rank 0.0001)
+  member
+… 另有 2476 个文件因预算省略
