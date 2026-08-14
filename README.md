@@ -8,6 +8,8 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness，采用"一切皆插件"�
 
 按顺序读，不需要跳读回翻：
 
+**[→ 完整目录索引（含全部章节级锚点）见 目录.md](./目录.md)**
+
 ```
 00-总览.md            ← 从这里开始（自包含，单读总览也成立）
 └── parts/
@@ -21,13 +23,13 @@ DeepSeek Harness 是 DeepSeek 开源的 agent harness，采用"一切皆插件"�
 
 | 篇 | 定位 | 一句话 |
 |---|---|---|
-| **00 总览**（8.6k 字） | 全景 | 垫层 + C4 全景 + 三个关键场景主线 + 六篇导览 |
-| **01 Cordis 插件底座** | 垫层 | 一行 cordis.yml 如何变成活插件又被干净卸载——Cordis 把卸载做成一等公民，dsh vendor 它并打了 18 条修改补丁 |
-| **02 核心 spine 与一轮 turn** | 主战场 S1 | 一句话走完一轮 turn 的状态机与事件序列，model-visible ⟺ logged 由 invariant 逐字节断言，并验证了 architecture.md turn flow 假设成立 |
-| **03 LLM 能力层与流式管道** | S1 模型段 | 一次调用拆成词汇→seam→adapter 三段，双 waterfall 分工、twin adapters 证明替换性，重试与计量都遵守"可见皆可重建" |
-| **04 工具 seams 与执行管道** | 主战场 S2 | 从 tool_use 到进程的 approval→sandbox→spawn 七站，三角色 seam 范式在十几个能力上机械重复，subprocess 是唯一进程 substrate |
-| **05 会话数据面与持久化** | S1 durable 侧 | 200ms 批窗口 + 三个语义检查点，崩溃不截断工作，resume/fork 走版本闸与合成关闭——日志是唯一被当事实对待的字节 |
-| **06 组合发行与多前端** | 主战场 S3 | 组合层是纯函数 + 一摞 YAML（78 行 insert 在空根上长树），preset standing mount 补完 Web 浏览器/宿主分半，五种发行形态共享同一组合语义 |
+| **[00 总览](./00-总览.md)**（8.6k 字） | 全景 | 垫层 + C4 全景 + 三个关键场景主线 + 六篇导览 |
+| **[01 Cordis 插件底座](./parts/01-cordis-插件底座.md)** | 垫层 | 一行 cordis.yml 如何变成活插件又被干净卸载——Cordis 把卸载做成一等公民，dsh vendor 它并打了 18 条修改补丁 |
+| **[02 核心 spine 与一轮 turn](./parts/02-核心spine与一轮turn.md)** | 主战场 S1 | 一句话走完一轮 turn 的状态机与事件序列，model-visible ⟺ logged 由 invariant 逐字节断言，并验证了 architecture.md turn flow 假设成立 |
+| **[03 LLM 能力层与流式管道](./parts/03-llm能力层与流式管道.md)** | S1 模型段 | 一次调用拆成词汇→seam→adapter 三段，双 waterfall 分工、twin adapters 证明替换性，重试与计量都遵守"可见皆可重建" |
+| **[04 工具 seams 与执行管道](./parts/04-工具seams与执行管道.md)** | 主战场 S2 | 从 tool_use 到进程的 approval→sandbox→spawn 七站，三角色 seam 范式在十几个能力上机械重复，subprocess 是唯一进程 substrate |
+| **[05 会话数据面与持久化](./parts/05-会话数据面与持久化.md)** | S1 durable 侧 | 200ms 批窗口 + 三个语义检查点，崩溃不截断工作，resume/fork 走版本闸与合成关闭——日志是唯一被当事实对待的字节 |
+| **[06 组合发行与多前端](./parts/06-组合发行与多前端.md)** | 主战场 S3 | 组合层是纯函数 + 一摞 YAML（78 行 insert 在空根上长树），preset standing mount 补完 Web 浏览器/宿主分半，五种发行形态共享同一组合语义 |
 
 `assets/` 内附目录树快照、repo map（PageRank 枢纽文件排序）、组合树全表等物化资产。
 
